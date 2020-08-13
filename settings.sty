@@ -1,0 +1,40 @@
+% General Settings
+\usepackage{xcolor,url}
+\usepackage{amsmath,amssymb}
+\usepackage{listings}
+%\usepackage{listings,plistings}
+\usepackage[absolute,overlay]{textpos}
+
+% Font Settings
+\usepackage[T1]{fontenc}
+\usepackage[light]{plex-sans,plex-serif,plex-mono}
+\usepackage{eulerpx}
+
+% Beamer settings
+\usepackage{bxdpx-beamer}
+\usepackage{pxjahyper}
+\renewcommand{\kanjifamilydefault}{\gtdefault}
+
+% Base theme
+\usetheme{metropolis}
+
+% Frame settings
+%% Show totalframenumber
+\setbeamertemplate{page number in foot}[totalframenumber]
+%% Change itemize subitem dot
+\setbeamertemplate{itemize item}[square]
+\setbeamertemplate{itemize subitem}[circle]
+\setbeamertemplate{itemize subsubitem}[triangle]
+
+% listings settings for Beamer
+\lstset{
+    basicstyle=\scriptsize\ttfamily,
+    frame=leftline,
+    xleftmargin=14pt,
+    xrightmargin=14pt,
+    breaklines=true,
+    numbers=left,
+    numberstyle=\scriptsize\ttfamily,
+    stepnumber=1,
+    % lineskip=-0.95\zw
+}

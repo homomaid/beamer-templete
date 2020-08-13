@@ -1,0 +1,32 @@
+\documentclass[dvipdfmx,uplatex,t]{beamer}
+\usepackage{settings}
+
+\title{Title}
+\author{homomaid}
+\date{\today}
+\institute{}
+
+\begin{document} 
+    \frame{\maketitle}
+
+    \begin{frame}{目次}
+        \tableofcontents
+    \end{frame}
+
+    \section{大見出し}
+    \begin{frame}{小見出し}
+        \begin{itemize}
+            \item 内容
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}[fragile]{ソースコードの例}
+        \begin{lstlisting}
+#include <stdio.h>
+int main() {
+    printf("Hello, World!\n");
+    return 0;
+}
+        \end{lstlisting}
+    \end{frame}
+\end{document}
